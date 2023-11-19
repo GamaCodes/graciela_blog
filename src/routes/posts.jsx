@@ -22,7 +22,7 @@ function Posts() {
           return (
             <div key={index}>
               <p>Titulo: {post.title.rendered}</p>
-              <p>ID: {post.id}</p>
+              <p>Fecha: {post.date}</p>
               <Link to={`/posts/${post.id}`}>Ver más</Link>
             </div>
           )

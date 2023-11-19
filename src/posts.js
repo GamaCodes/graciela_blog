@@ -2,7 +2,7 @@ import axios from 'axios'
 //import sortBy from "sort-by";
 
 export async function getPosts() {
-    let posts = await axios.get('https://gracieladominguez.org/wp-json/wp/v2/posts')
+    let posts = await axios.get('https://gracieladominguez.org/worpress/blog/wp-json/wp/v2/posts')
     .then((response) => response.data
     )
 
@@ -11,7 +11,7 @@ export async function getPosts() {
 }
 
 export async function getPost(id) {
-    let post = await axios.get(`https://gracieladominguez.org/wp-json/wp/v2/posts/${id}`)
+    let post = await axios.get(`https://gracieladominguez.org/worpress/blog/wp-json/wp/v2/posts/${id}`)
     .then((response) => response.data
     )
 

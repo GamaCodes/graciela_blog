@@ -2,7 +2,7 @@
   "name": "gabriela_blog",
   "private": true,
   "version": "0.0.1",
-  "homepage": "https://gracieladominguez.org/nextapp/",
+  "homepage": "https://gracieladominguez.org/worpress/blog/",
   "type": "module",
   "scripts": {
     "dev": "vite",

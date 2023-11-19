@@ -11,30 +11,14 @@ export async function loader() {
 }
 
 function Home() {
-
-    const { posts } = useLoaderData();
-    /*
-  const [posts, setPosts] = useState({})
-
-  const getPosts = ()=> {
-    axios.get('http://gracieladominguez.org/wp-json/wp/v2/posts').then((response) => {
-      setPosts(response.data);
-    })
-  }
-
-  useEffect(()=> {
-    getPosts()
-  }, [])
-
-  console.log(posts, 'posts')
-  */
+  const { posts } = useLoaderData();
 
   return (
     <>
-      <Heading bg="brand.100">Vite & React</Heading>
+      <Heading bg="brand.100">Graciela Dominguez</Heading>
       <div className="card">
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Sitio en Construcción
         </p>
       </div>
       {
