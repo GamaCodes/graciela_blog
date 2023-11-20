@@ -5,8 +5,9 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from "./routes/root";
-//import Home, { loader as homeLoader }  from "./routes/home";
+import Home, { loader as homeLoader }  from "./routes/home";
 import Construction from "./routes/construction";
+import Search from "./routes/search";
 import ErrorPage from "./routes/error";
 import Post, { loader as postLoader }  from "./routes/post";
 import Posts, { loader as postsLoader }  from "./routes/posts";
@@ -27,10 +28,10 @@ const router = createBrowserRouter([
         loader: homeLoader,
       },
       */
-      {
-        path: "/",
-        element: <Construction />
-      },
+     {
+       path: "/",
+       element: <Construction />
+     },
       {
         path: "posts",
         element: <Posts />,
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
         path: "posts/:postId",
         element: <Post />,
         loader: postLoader,
+      },
+      {
+        path: "search",
+        element: <Search />,
       },
     ],
   },

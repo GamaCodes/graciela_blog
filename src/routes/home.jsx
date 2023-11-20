@@ -15,7 +15,7 @@ function Home() {
 
   return (
     <>
-      <Heading bg="brand.100">Graciela Dominguez</Heading>
+      <Heading as='h1' color="brand.100" textAlign={'center'}>Graciela Dominguez</Heading>
       <div className="card">
         <p>
           Sitio en Construcción

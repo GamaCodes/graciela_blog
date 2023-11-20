@@ -1,0 +1,21 @@
+.root-header {
+    padding: .8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #008b8b;
+}
+
+.icon-cursor {
+    cursor: pointer;
+}
+
+.root-option p {
+    padding: 1rem .5rem;
+}
+
+.root-option :hover  {
+    background-color: #008b8b;
+    font-weight: bold;
+    color: white;
+}

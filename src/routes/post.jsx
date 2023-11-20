@@ -11,7 +11,7 @@ export default function Post() {
   const { post } = useLoaderData();
   return (
     <div> 
-      <Heading bg="brand.100">{post.title.rendered}</Heading>
+      <Heading as='h1' color="brand.100" textAlign={'center'}>{post.title.rendered}</Heading>
       <p>{post.date}</p>
       <div dangerouslySetInnerHTML={{__html: post.content.rendered}}/>
     </div>

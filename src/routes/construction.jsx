@@ -5,7 +5,7 @@ export default function Construction() {
     <div className='buil-page'>
         <Card align='center'>
             <CardHeader>
-                <Heading size='md'> Graciela Dominguez</Heading>
+                <Heading size='md' as='h1'> Graciela Dominguez</Heading>
             </CardHeader>
             <CardBody>
                 <Text>Sitio en Construcción</Text>

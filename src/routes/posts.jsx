@@ -2,7 +2,12 @@
 import { useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { getPosts } from "../posts";
-import { Heading } from '@chakra-ui/react'
+import {
+  Heading,
+  IconButton,
+  Input
+} from '@chakra-ui/react'
+import { SearchIcon } from '@chakra-ui/icons'
 import '../App.css'
 
 export async function loader() {
@@ -16,7 +21,13 @@ function Posts() {
 
   return (
     <>
-      <Heading bg="brand.100">Posts</Heading>
+      <Heading as='h1' color="brand.100" textAlign={'center'}>Noticias</Heading>
+      <Input placeholder='Buscar noticia' />
+      <IconButton
+          colorScheme='blue'
+          aria-label='Search database'
+          icon={<SearchIcon />}
+      />
       {
         posts.length > 0 && posts.map((post, index) => {
           return (
