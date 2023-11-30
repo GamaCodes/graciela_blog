@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, ScrollRestoration } from "react-router-dom";
 import {
     Drawer,
     DrawerBody,
@@ -25,7 +25,7 @@ export default function Root() {
     <div id="root-page">
         <div className="root-header">
             <Link to='/'>
-                <Heading as='h2' size='xl' noOfLines={1} color='#fff'>
+                <Heading as='h2' size='xl' noOfLines={1} color='#fff' className="title">
                     Graciela Dominguez
                 </Heading>
             </Link>
@@ -76,7 +76,7 @@ export default function Root() {
 
             <DrawerFooter>
                 <Link to={'/search'} onClick={onClose}>    
-                    <Button rightIcon={<SearchIcon />} colorScheme='teal' variant='outline'>
+                    <Button rightIcon={<SearchIcon />} color='brand.100' variant='outline'>
                         Buscar noticia
                     </Button>
                 </Link>
@@ -86,6 +86,7 @@ export default function Root() {
         <div id="home" className="main-container">
             <Outlet />
         </div>
+        <ScrollRestoration />
     </div>
   );
 }
