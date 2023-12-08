@@ -7,6 +7,7 @@ import {
 import Root from "./routes/root";
 import Home, { loader as homeLoader }  from "./routes/home";
 import Construction from "./routes/construction";
+import Biography from "./routes/biography";
 import Search from "./routes/search";
 import ErrorPage from "./routes/error";
 import Post, { loader as postLoader }  from "./routes/post";
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "search",
         element: <Search />,
+      },
+      {
+        path: "biography",
+        element: <Biography />,
       },
     ],
   },

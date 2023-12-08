@@ -65,7 +65,6 @@ function Search() {
 
   return (
     <>
-      <Heading as='h1' color="brand.100" textAlign={'center'}>Buscador</Heading>
       <div >
         <form onSubmit={handleSubmit} className="searcher-container">
           <FormControl>

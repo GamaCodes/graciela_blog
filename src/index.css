@@ -54,7 +54,7 @@
 }
 
 .post-body {
-    margin: 1rem;
+    padding: 0 1rem 1rem 1rem ;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -78,6 +78,21 @@
     background-color: #fff !important;    
 }
 
+.stack-posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-container {
+    width: 80vw;
+    margin: auto;
+}
+
+.bio-card-container {
+    flex-direction: row !important;
+}
+
 @media (max-width: 782px) {
     .main-container {
         padding: 1rem 0;
@@ -92,5 +107,16 @@
     }
     .post-html {
         padding: 1rem;
+    }
+    .stack-posts {
+        width: 80%;
+        margin: auto;
+        display: block;
+    }
+    .searcher-container {
+        width: 80%;
+    }
+    .bio-card-container {
+        flex-direction: column !important;
     }
 }

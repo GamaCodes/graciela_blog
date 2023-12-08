@@ -38,11 +38,12 @@ function Posts() {
 
   return (
     <>
-      <Heading as='h1' color="brand.100" textAlign={'center'}>Noticias</Heading>
-      <Stack spacing={4} direction='row' align='center' justify='center'>
-        <Button colorScheme="brand" size='md' onClick={() => clearFilter()}>
-          Todas
-        </Button>
+      <div className='stack-posts'>
+        <div className="post-body">
+          <Button colorScheme="brand" size='md' onClick={() => clearFilter()}>
+            Todas
+          </Button>
+        </div>
         {
           categories.length > 0 && categories.map((category, index) => {
             return (
@@ -54,7 +55,7 @@ function Posts() {
             )
           })
         }
-      </Stack>
+      </div>
       <div className="post-container"> 
         <Card>
           <CardBody className="card-container">

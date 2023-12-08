@@ -68,7 +68,7 @@ export default function Root() {
                 <Divider />
 
                 <div className='root-option' onClick={onClose} >
-                    <Link to={'/posts'}>
+                    <Link to={'/biography'}>
                         <Text fontSize='xl'>Biografia</Text>  
                     </Link>
                 </div>
