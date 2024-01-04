@@ -28,7 +28,7 @@ console.log()
       <Card>
         <CardBody className="card-container">
           <Heading as='h1' color="brand.100" textAlign={'center'}>{post.title.rendered}</Heading>
-          <Text fontSize='sm' align={"right"}>{new Date(post.date.split("T")[0]).toLocaleString("es-ES", dateFormat)}</Text>
+          <Text fontSize='m' align={"right"} color='#999'>{new Date(post.date.split("T")[0]).toLocaleString("es-ES", dateFormat)}</Text>
           <div dangerouslySetInnerHTML={{__html: post.content.rendered}} className="post-html"/>
           { isTweet && <div className="tweet-container"><Tweet id={idTweet[0]}/></div>}
         </CardBody>

@@ -41,6 +41,7 @@ body {
     border-radius: 16px;
     padding: 2rem;
     margin: 1rem 3rem;
+    text-align: right;
 }
 
 .wp-block-quote p{
@@ -104,6 +105,14 @@ body {
     font-size: 1rem;
     text-align: center;
     font-style: italic;
+}
+
+.post-html p {
+    text-align: justify;
+}
+
+blockquote p {
+    text-align: center !important;
 }
 
 @media (max-width: 782px) {

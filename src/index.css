@@ -14,7 +14,7 @@
 }
 
 .main-container {
-    padding: 3rem;
+    padding: 2rem 3rem;
     width: 100vw;
 }
 
@@ -93,12 +93,71 @@
     flex-direction: row !important;
 }
 
+.extract-html {
+    margin-top: 1.5rem;
+}
+
+.card-hover .chakra-card:hover {
+    border-color: #af272f !important;
+    border-width: 2px;
+
+    & h2 {
+        color: #af272f !important;
+    }
+}
+
+.filter-option:hover {
+    box-shadow: rgba(0, 0, 0, 0.75) 0px 5px 15px;
+}
+
+.filter-select {
+    background-color: #fff!important;
+    border: 1px solid #af272f!important;
+    color: #af272f!important;
+    font-weight: bold!important;
+}
+
+.post-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.hero-image {
+    height: 80vh;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem 2.5rem 3rem;
+    width: 100%;
+    background-color: #00000082;
+    text-align: left;
+    cursor: pointer;
+}
+
+.main-posts {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    justify-content:space-around
+}
+
+.card-main {
+    width: 40vw;
+}
+
+
 @media (max-width: 782px) {
     .main-container {
         padding: 1rem 0;
         width: 100vw;
     }
     .post-container {
+        width: 95vw;
+        margin: auto;
+    }
+    .bio-container {
         width: 95vw;
         margin: auto;
     }
@@ -118,5 +177,16 @@
     }
     .bio-card-container {
         flex-direction: column !important;
+    }
+    .main-posts {
+        display: grid;
+        grid-template-columns: 95vw;
+        justify-content: center;
+    }
+    .card-main {
+        width: 95vw;
+    }
+    .hero-image {
+        height: 70vh;
     }
 }
